@@ -1,0 +1,43 @@
+<div class="main-content">
+    <div class="container-fluid" style="padding-top: 5px">
+        <mat-accordion>
+
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Introduction</mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="intro-panel">
+                    <!-- Introduction Section -->
+                    <app-intro-section 
+                        [dt_record]="dt_intro" 
+                        [url]="intro_url">
+                    </app-intro-section>
+                </div>
+            </mat-expansion-panel>
+            
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Address</mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="logo-panel">
+                    <!-- Address Content Section -->
+                    <app-contact [dt_records]="dt_records"></app-contact>
+                </div>
+            </mat-expansion-panel>
+
+        </mat-accordion>
+    </div>
+</div>
+
+
+
+
+
+      
+
+      
+  
+  
+  
+  
+  

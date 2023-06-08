@@ -1,0 +1,70 @@
+
+<div class="main-content">
+ 
+    <div class="container-fluid" style="padding-top: 5px">
+
+      <mat-accordion>
+        <mat-expansion-panel [expanded]="true" *ngIf="this.catId==1">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Logo Image
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="logo-panel">
+            <app-logo></app-logo>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Introduction
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="intro-panel">
+            <app-intro-section 
+                [dt_record]="dt_intro" 
+                [url]="intro_url">
+            </app-intro-section>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Content
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="intro-panel">
+            <app-dtmng-brief-section [url]="content_url" 
+                               [dt_record]="dt_record" 
+                               [panel_layout_way]="1" 
+                            
+                               (createSectionEvent)="createSection($event)" 
+                               (deleteSectionEvent)="deleteSection($event)" 
+                               (saveSectionEvent)="saveSection($event)" ></app-dtmng-brief-section>
+
+
+                <!-- <app-intro-section ></app-intro-section> -->
+
+                <!-- [dt_record]="dt_record" [url]="intro_url"  -->
+
+              
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+      
+  
+  
+  
+  
+  
