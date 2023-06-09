@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/assets/css/admin/main.css" media="all">
+<link rel="stylesheet" href="/assets/css/admin/bootstrap.css" media="all">
+
+<block-ui message="Loading...">
+    
+<!-- site logo start -->
+<div class="top-logo" data-view="ctaHeader">
+    <div class="logo-title">
+      <a class="header-envato_market" href="/home">ICS</a> <span clas="sub-title"> (Industrial Communication & Sound)</span>
+    </div>
+    <div class="uk-navbar" >
+        <ul class="uk-navbar-nav user_actions">
+            <li>
+                <a class="user_action_image" >
+                    <img class="md-user-image" [matMenuTriggerFor]="menu" src="/assets/img/avatars/avatar_11_tn.png" alt="">
+                </a>
+                <mat-menu #menu="matMenu" class="">
+                    <button mat-menu-item (click)="onBtnChangePassClick()">Change Password</button>
+                    <button mat-menu-item (click)="onBtnLogoutClick()">Log out</button>
+                </mat-menu>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- site logo end -->
+
+<!-- main page header start -->
+<header id="header_main">
+    <div class="header_main_content">
+        {{currentMenuPath}}
+    </div>
+</header>
+<!-- main page header end -->
+
+<!-- sidebar start -->
+<app-sidebar [menuItems]="menuItems"></app-sidebar>
+<!-- sidebar end -->
+
+<div id="page_content">
+    <router-outlet></router-outlet>
+</div>
+
+</block-ui>
