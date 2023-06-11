@@ -1,0 +1,8 @@
+mat-form-field {
+    width: 550px
+}
+.confirm_message {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,29 @@
+<div class="row section-control-panel" style="margin-top: 5px">
+    <div class="col-lg-6 col-md-6 col-sm-6" class="" style="width:50%;">
+        <app-address class="logo_section" 
+            [id]="dt_records[0].id"
+            [address]="dt_records[0].address" 
+            [phone]="dt_records[0].phone" 
+            [mail]="dt_records[0].mail" 
+            [company_title]="dt_records[0].company_title" 
+            [e_no]="1"
+
+            (changeCompanyTitleEvent)="changeCompanyTitle($event)" 
+
+        ></app-address>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6" class="" style="width:50%;">
+        <app-address class="logo_section" 
+            [id]="dt_records[1].id"
+            [address]="dt_records[1].address" 
+            [phone]="dt_records[1].phone" 
+            [mail]="dt_records[1].mail" 
+            [company_title]="dt_records[1].company_title" 
+            [e_no]="2"
+
+            (changeCompanyTitleEvent)="changeCompanyTitle($event)" 
+
+        ></app-address>
+    </div>
+</div>
+   

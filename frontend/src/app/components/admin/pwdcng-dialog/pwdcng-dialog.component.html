@@ -1,0 +1,35 @@
+
+<h1 mat-dialog-title>Password Change Dialog</h1>
+
+
+<div mat-dialog-content>
+    <form [formGroup]="chgPassForm"  (ngSubmit)="onSubmitChange()">
+        <div class="form-content">
+
+            <mat-form-field class="full-width ">
+                <mat-label>Old Password: </mat-label>
+                <input matInput placeholder="Please input old password." name="old_password" formControlName="old_password" type="password" >
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>New Password: </mat-label>
+                <input matInput placeholder="Please input new password." name="new_password" formControlName="new_password" type="password" >
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Confirm Password: </mat-label>
+                <input matInput placeholder="Please input confirm password." [errorStateMatcher]="matcher"
+                                                                        name="cfm_password" formControlName="cfm_password" type="password" >
+            </mat-form-field>						
+        </div>
+        <div mat-dialog-actions [align]="align_center">
+            <div class="action-panel">
+                <button class="btn-primary" mat-button>OK</button>
+                <button mat-raised-button (click)="onNoClick()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+

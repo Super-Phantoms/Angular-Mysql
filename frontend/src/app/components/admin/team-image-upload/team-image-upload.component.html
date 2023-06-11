@@ -1,0 +1,51 @@
+<div class="row team-image-upload" style="padding: 10px">
+  <!-- <div class="col-x1-12 col-lg-12"> -->
+    <mat-card class="image_card">
+      <mat-card-header>
+        <div mat-card-avatar><mat-icon>image</mat-icon></div>
+        <mat-card-title>Member's Photo_</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content class="hide">
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input class="hide" matInput name="img_title" placeholder="Image Titile..." [ngModel]="title" (ngModelChange)="onChangeImgTitle($event)">
+            </mat-form-field>
+          </form>
+
+      </mat-card-content>
+
+      <div class="image-section">
+        <img id="output" 
+          class="pd10" 
+          mat-card-image 
+          (click)="_onLoadImg_AscAvnAdvs($event)"
+          [src]="img || '/assets/images/select_image.png'" 
+          alt="Image of Service">
+      </div>
+
+      <mat-card-actions>
+        <div class="action-secion">
+          <input 
+            style="display: none" 
+            name="image" 
+            id="ninja_loadImgBtn{{s_no}}_{{e_no}}" 
+            type="file" 
+            accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*"
+            attr.data-order={{e_no}} 
+            label="Choose Image" 
+            (change)="uploadFileHandler($event)"/>
+          <button class="ml10 btn-primary" mat-button mat-stroked-button color="primary" id="loadImgBtn{{s_no}}_{{e_no}}" (click)="_onLoadImg_AscAvnAdvs($event)">Load Image</button>
+          <button 
+            class="ml10 btn-danger hide" 
+            mat-button mat-stroked-button 
+            color="primary" 
+            attr.data-order={{e_no}} 
+            (click)="_onDel_AscAvnAdvs($event)">Delete</button>
+          <button class="ml10" mat-button mat-stroked-button color="primary" attr.data-order={{e_no}} (click)="_onAdd_AscAvnAdvs($event)" *ngIf="has_newBtn" >Add</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+</div>
+

@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>{{data.dialog_title}}</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Please enter new section's title</mat-label>
+    <input matInput name="new_sec_title" [(ngModel)]="data.new_section_title" >
+  </mat-form-field>
+  <div *ngIf="data.hasLabel_01">
+    <div class="additional-info">{{data.label_01}}{{data.value_01}}</div>
+  </div>
+</div>
+<div mat-dialog-actions [align]="align_center">
+  <button class="btn-primary" mat-button [mat-dialog-close]="getResult()" cdkFocusInitial>OK</button>
+  <button mat-raised-button (click)="onNoClick()">Cancel</button>
+</div>

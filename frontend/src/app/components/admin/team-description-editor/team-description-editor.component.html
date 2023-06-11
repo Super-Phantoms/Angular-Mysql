@@ -1,0 +1,84 @@
+<div class="row" style="padding: 10px;">
+    <div class="col-xl-12 col-lg-12">
+        <mat-card class="summary_card">
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon class="">description</mat-icon></div>
+            <mat-card-title>Member's Name_</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6">
+                <form class="example-form">
+                  <mat-form-field class="example-full-width">
+                    <input matInput name="firstName" placeholder="First Name..." [ngModel]="firstName" (ngModelChange)="_onChangeFirstName($event)">
+                  </mat-form-field>
+                  
+                </form>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <form class="example-form">
+                  <mat-form-field class="example-full-width">
+                    <input matInput name="lastName" placeholder="Last Name..." [ngModel]="lastName" (ngModelChange)="_onChangeLastName($event)">
+                  </mat-form-field>
+                </form>
+              </div>
+            </div>
+            <div>
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input matInput name="major" placeholder="Major..." [ngModel]="major" (ngModelChange)="_onChangeMajor($event)">
+                </mat-form-field>
+              </form>
+            </div>
+
+            
+            <ckeditor
+              editField="summary"
+              [type]="editorType"
+              [data]="summary"
+              [config]="editorConfig"
+              (ready)="onReady( $event )"
+              (change)="onChangeSummary( $event )"
+              (focus)="onFocus( $event )"
+              (blur)="onBlur( $event )"
+              (paste)="onPaste( $event )"
+              (afterPaste)="onAfterPaste( $event )"
+              (dragStart)="onDragStart( $event )"
+              (dragEnd)="onDragEnd( $event )"
+              (drop)="onDrop( $event )"
+              (fileUploadRequest)="onFileUploadRequest( $event )"
+              (fileUploadResponse)="onFileUploadResponse( $event )"
+              (namespaceLoaded)="onNamespaceLoaded( $event )"
+            ></ckeditor>
+
+            <div class="form-group hide" >
+              <mat-label class="form-label">Show way: </mat-label>
+              <mat-radio-group  [(ngModel)] = "gallery" (ngModelChange)="_onChangeGallery($event)">  
+                <mat-radio-button *ngFor = "let front_gallery of front_gallerys; index as i;" [value]="front_gallery.v" >  
+                   {{front_gallery.s}}  
+                </mat-radio-button>  
+             </mat-radio-group>  
+             
+            </div>
+
+            <div class="form-group hide">
+              <mat-label class="form-label">Media URL: </mat-label>
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input readonly matInput name="media" placeholder="" [ngModel]="media" (ngModelChange)="_onChangeMedia($event)">
+                </mat-form-field>
+
+                <input id="media_selector" hidden type="file" (change)="onFileSelected($event)">
+                <button 
+                      class="ml10 btn-primary" 
+                      mat-button mat-stroked-button 
+                      color="primary" 
+                      (click)="_onChangeMediaSrc($event)">Load Media</button>
+              </form>
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+    </div>
+</div>

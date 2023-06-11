@@ -1,0 +1,27 @@
+<div class="row section-control-panel" style="margin-top: 5px">
+    <div class="col-lg12" class="action-panel">
+        <button class="section_save_btn btn-primary" id={{dt_record.id}} mat-flat-button color="primary" (click)="_onClickSave($event)">Save</button>
+        <button class="section_delete_btn btn-danger" mat-button mat-stroked-button color="warn" (click)="_onClickDelete($event)">Delete</button>
+        <button class="section_create_btn custom-color-2" *ngIf="has_newBtn" mat-stroked-button color="primary" (click)="_onClickCreate($event)">Create</button>
+    </div>
+    <section class="hide">
+        <mat-progress-bar class="ml5 {{progressbar_show}}" mode="determinate" [value]="cur_progress" bufferValue="100"></mat-progress-bar>
+    </section>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <app-team-description-editor [firstName]="dt_record.firstName" [summary]="dt_record.summary" [major]="dt_record.major" 
+            [media]="dt_record.media"  [gallery]="dt_record.gallery" [lastName]="dt_record.lastName" 
+            (updateSummaryEvent)="updateSummary($event)" (updateFirstNameEvent)="updateFirstName($event)" (updateLastNameEvent)="updateLastName($event)"
+            (updateMediaEvent)="updateMedia($event)" (updateGalleryEvent)="updateGallery($event)" (updateMajorEvent)="updateMajor($event)"
+            (updateFileEvent)="updateFile($event)" ></app-team-description-editor>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <!-- <div *ngFor="let dt_img of dt_record.images; index as i; let first = first; let last = last"> -->
+            <app-team-image-upload [img]="dt_record.img" [title]="" [s_no]="e_no" [e_no]="0" 
+                (deleteImgEvent)="deleteImage($event)" (createImgEvent)="createImage($event)" 
+                (updateImgTitleEvent)="updateImageTitle($event)" (updateImgEvent)="updateImage($event)"
+                [has_newBtn]="false"></app-team-image-upload>
+        <!-- </div> -->
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.full-width {
+    width: 100%;
+}
+
+.mdc-dialog__content {
+    padding: 20px 24px 0px 24px;
+}

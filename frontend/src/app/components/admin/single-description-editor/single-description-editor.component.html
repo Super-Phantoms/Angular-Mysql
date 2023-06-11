@@ -1,0 +1,109 @@
+<div class="row" style="padding: 10px 0px 10px 0px;">
+    <div class="col-xl-12 col-lg-12">
+        <mat-card class="summary_card">
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon class="">description</mat-icon></div>
+            <mat-card-title>Introduction_</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <div *ngIf="has_title">
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input matInput name="title" placeholder="Introduction Title..." [ngModel]="title" (ngModelChange)="_onChangeTitle($event)">
+                </mat-form-field>
+              </form>
+            </div>
+            
+            <ckeditor *ngIf="show_subject"
+              editField="subject"
+              [type]="editorType"
+              [data]="subject"
+              [config]="editorConfig"
+              (ready)="onReady( $event )"
+              (change)="onChangeSubject( $event )"
+              (focus)="onFocus( $event )"
+              (blur)="onBlur( $event )"
+              (paste)="onPaste( $event )"
+              (afterPaste)="onAfterPaste( $event )"
+              (dragStart)="onDragStart( $event )"
+              (dragEnd)="onDragEnd( $event )"
+              (drop)="onDrop( $event )"
+              (fileUploadRequest)="onFileUploadRequest( $event )"
+              (fileUploadResponse)="onFileUploadResponse( $event )"
+              (namespaceLoaded)="onNamespaceLoaded( $event )"
+            ></ckeditor>
+
+            <ckeditor *ngIf="show_mobile_subject"
+              editField="subject"
+              [type]="editorType"
+              [data]="mobile_subject"
+              [config]="editorConfig"
+              (ready)="onReady( $event )"
+              (change)="onChangeMobileSubject( $event )"
+              (focus)="onFocus( $event )"
+              (blur)="onBlur( $event )"
+              (paste)="onPaste( $event )"
+              (afterPaste)="onAfterPaste( $event )"
+              (dragStart)="onDragStart( $event )"
+              (dragEnd)="onDragEnd( $event )"
+              (drop)="onDrop( $event )"
+              (fileUploadRequest)="onFileUploadRequest( $event )"
+              (fileUploadResponse)="onFileUploadResponse( $event )"
+              (namespaceLoaded)="onNamespaceLoaded( $event )"
+            ></ckeditor>
+
+            <ckeditor
+              [type]="editorType"
+              [data]="summary"
+              [config]="editorConfig"
+              (ready)="onReady( $event )"
+              (change)="onChangeSummary( $event )"
+              (focus)="onFocus( $event )"
+              (blur)="onBlur( $event )"
+              (paste)="onPaste( $event )"
+              (afterPaste)="onAfterPaste( $event )"
+              (dragStart)="onDragStart( $event )"
+              (dragEnd)="onDragEnd( $event )"
+              (drop)="onDrop( $event )"
+              (fileUploadRequest)="onFileUploadRequest( $event )"
+              (fileUploadResponse)="onFileUploadResponse( $event )"
+              (namespaceLoaded)="onNamespaceLoaded( $event )"
+            ></ckeditor>
+
+            <div *ngIf="has_gallery" class="form-group">
+              <mat-label class="form-label">Show way: </mat-label>
+              <mat-radio-group  [(ngModel)] = "gallery" (ngModelChange)="_onChangeGallery($event)">  
+                <mat-radio-button *ngFor = "let front_gallery of front_gallerys; index as i;" [value]="front_gallery.v" >  
+                   {{front_gallery.s}}  
+                </mat-radio-button>  
+             </mat-radio-group>  
+             
+            </div>
+
+            <div *ngIf="has_media" class="form-group">
+              <mat-label class="form-label">Media URL: </mat-label>
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input readonly matInput name="media" placeholder="" [ngModel]="media" (ngModelChange)="_onChangeMedia($event)">
+                </mat-form-field>
+
+                <input id="media_selector" hidden type="file" (change)="onFileSelected($event)">
+                <button 
+                      class="ml10 btn-primary" 
+                      mat-button mat-stroked-button 
+                      color="primary" 
+                      (click)="_onChangeMediaSrc($event)">Load Media</button>
+                <button 
+                      class="ml10 ml10 btn-danger" 
+                      mat-button mat-stroked-button 
+                      color="primary" 
+                      (click)="_onDeleteMediaSrc($event)">Delete Media</button>
+
+              </form>
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+    </div>
+</div>

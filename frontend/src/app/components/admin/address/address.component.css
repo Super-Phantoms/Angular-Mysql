@@ -1,0 +1,93 @@
+mat-card {
+    padding: 0px;
+}
+.pd10 {
+    padding: 10px 10px 5px 10px
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0), 0px 1px 1px 0px rgba(0, 0, 0, 0), 0px 1px 3px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0), 0px 1px 1px 0px rgba(0, 0, 0, 0), 0px 1px 3px 0px rgba(0, 0, 0, 0);
+    border: 1px solid #dfdfdf;
+}
+
+mat-card.mat-card {
+    margin-bottom: 15px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0.25em;
+}
+
+.mat-card-actions, .mat-card-subtitle, .mat-card-content {
+    display: block;
+    margin-bottom: 0px;
+}
+.mat-card-actions {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+.none {
+    display: none;
+}
+.mat-card-avatar {
+    text-align: right;
+}
+.ml10 {
+    margin-left: 10px;
+}
+mat-form-field {
+    width: 100%
+}
+
+.image_card .material-icons {
+    color: #0c6e46;
+    font-size: x-large;
+}
+
+.image_card .mat-mdc-card-title {
+    color: #0c6e46;
+    padding: 0;
+}
+
+div.image-section {
+    text-align: center;
+    padding: 10px 0px;
+}
+div.image-section.background-light {
+    background-color: white;
+}
+div.image-section.background-dark {
+    background-color: gray;
+}
+
+.image_card .image-section img {
+    cursor: pointer;
+}
+.action-secion {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.square30 {
+    width: 30px;
+    height: 30px;
+}
+.address-control {
+    width: 350px;
+    border: 3px solid lightblue;
+    border-radius: 8px;
+    height: 55px;
+    padding: 5px 10px;
+}
+.address-double-control {
+    height: 80px;
+}
+.company-title-anno {
+    color: red;
+    margin-left: -59px;
+    padding-right: 5px;
+}

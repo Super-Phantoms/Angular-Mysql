@@ -1,0 +1,56 @@
+.partner_card {
+    border: 1px solid #b8b8cf;
+    border-radius: 5px;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+}
+
+.partner_card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #ededed;
+}
+.partner_card_content:hover {
+    background-color: #dadaeb;
+}
+
+.partner_card_content input {
+    text-align: center;
+}
+
+.partner_card .action-bar {
+    text-align: right;
+}
+
+.partner_card .form-group .label {
+    text-align: right;
+    padding-right: 10px;
+}
+.partner_card .partner_brandImage {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.partner_card .partner_brandImage img.pd10 {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    background-color: gray;
+}
+
+.partner_card .material-icons.edit {
+    color: rgb(4, 54, 4);
+    cursor: pointer;
+}
+.partner_card .material-icons.edit:hover {
+    color: rgb(22, 155, 22);
+}
+.partner_card .material-icons.delete {
+    color: rgb(202, 99, 99);
+    cursor: pointer;
+}
+.partner_card .material-icons.delete:hover {
+    color: rgb(230, 5, 5);
+}

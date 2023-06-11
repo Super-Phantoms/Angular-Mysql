@@ -1,0 +1,66 @@
+<div class="row single-image-upload" style="padding: 10px">
+    <!-- <div class="col-x1-12 col-lg-12"> -->
+      <mat-card class="image_card">
+        <mat-card-header>
+          <div mat-card-avatar><mat-icon>home</mat-icon></div>
+          <mat-card-title>Address_{{e_no}}</mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+  
+        <div class="row image-section">
+            <div class="row">
+                <div class="pd10" >
+                  <!-- <img width="30" height="30" src="/assets/images/002-02-Icon.png" alt="" loading="lazy" 
+                      srcset="/assets/images/002-02-Icon.png 500w, /assets/images/002-02-Icon.png 300w, /assets/images/002-02-Icon.png 150w" 
+                      sizes="(max-width: 500px) 100vw, 500px" 
+                      class="attachment-full size-full"
+                      style="margin-right: 10px;"> -->
+                  <span class="company-title-anno">Company Title:</span>
+                  <input class="address-control" matInput name="company_title" placeholder="Company Title..." [ngModel]="company_title" (ngModelChange)="onChangeCompanyTitle($event)">
+                </div>
+
+
+                <div class="pd10">
+                  <img width="30" height="30" src="/assets/images/002-02-Icon.png" alt="" loading="lazy" 
+                      srcset="/assets/images/002-02-Icon.png 500w, /assets/images/002-02-Icon.png 300w, /assets/images/002-02-Icon.png 150w" 
+                      sizes="(max-width: 500px) 100vw, 500px" 
+                      class="attachment-full size-full"
+                      style="margin-right: 10px; margin-top: -70px;">
+                  <textarea class="address-control address-double-control" name="address" placeholder="Address..." [ngModel]="address" (ngModelChange)="onChangeAddress($event)">
+                    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                  </textarea>
+                </div>
+
+                <div class="pd10">
+                  <img width="30" height="30" src="/assets/images/002-04-Phone.png" alt="" loading="lazy" 
+                      srcset="/assets/images/002-04-Phone.png 500w, https://icands.com/wp-content/uploads/2020/09/002-04-Phone-300x300.png 300w, https://icands.com/wp-content/uploads/2020/09/002-04-Phone-150x150.png 150w" 
+                      sizes="(max-width: 500px) 100vw, 500px" 
+                      class="attachment-full size-full"
+                      style="margin-right: 10px;">
+                  <input class="address-control" matInput name="phone" placeholder="Phone..." placeholder="Phone Number..." [ngModel]="phone" (ngModelChange)="onChangePhone($event)">
+                </div>
+
+                <div class="pd10">
+                  <img width="30" height="30" src="/assets/images/002-03-mail.png" alt="" loading="lazy" 
+                      srcset="/assets/images/002-03-mail.png 500w, https://icands.com/wp-content/uploads/2020/09/002-03-mail-300x300.png 300w, https://icands.com/wp-content/uploads/2020/09/002-03-mail-150x150.png 150w" 
+                      sizes="(max-width: 500px) 100vw, 500px" 
+                      class="attachment-full size-full"
+                      style="margin-right: 10px;">
+                    <input class="address-control" matInput name="mail" placeholder="Mail..." placeholder="Mail..." [ngModel]="mail" (ngModelChange)="onChangeMail($event)">
+                </div>
+
+            </div>
+        </div>
+  
+        <mat-card-actions>
+          <div class="action-secion" style="margin-top: -10px;">
+  
+            <button class="btn-primary" mat-button mat-stroked-button color="primary"
+              (click)="onSaveClick($event)">Save</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+  
+  
+  

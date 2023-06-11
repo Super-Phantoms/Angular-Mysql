@@ -1,0 +1,42 @@
+<aside id="sidebar_main">
+    <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+        <div class="scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 858px;">
+            <div class="sidebar_main_header">
+                <div class="sidebar_logo" >
+                    <span class="menu_icon"><i class="material-icons md-24">dataset</i></span>
+                    <span class="menu_title">Management</span>
+                </div>
+            </div>
+            <div class="menu_section">
+                <ul>
+                    <li *ngFor="let menu of menuItems; index as i; first as isFirst" title={{menu.title}}
+                        class="{{ currentPath.indexOf(menu.path) >= 0 ? 'current_section' : '' }}">
+                        
+                        <ng-template [ngIf]="menu.subMenus" [ngIfElse]="linkTopMenu">
+                            <a href = "#">
+                                <span class="menu_icon"><i class="material-icons md-24">{{menu.icon}}</i></span>
+                                <span class="menu_title">{{menu.title}}</span>
+                            </a>
+                        </ng-template>
+                        <ng-template #linkTopMenu>
+                            <a routerLink = {{menu.path}}>
+                                <span class="menu_icon"><i class="material-icons md-24">{{menu.icon}}</i></span>
+                                <span class="menu_title">{{menu.title}}</span>
+                            </a>
+                        </ng-template>
+
+                        <ul *ngIf="menu.subMenus">
+                            <li *ngFor="let sm of menu.subMenus index as i;" 
+                                class="{{ currentPath == sm.path ? 'act_item' : ''}}">
+                                <a routerLink = {{sm.path}}>
+                                    <span class="menu_title">{{sm.title}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aside>
+

@@ -1,0 +1,22 @@
+<div class="partner_card"><div class="partner_card_content">
+    <div class="action-bar" >
+        <span class="menu_icon" (click)="onSavePartner($event)"><i class="material-icons edit md-24">save</i></span>
+        <span class="menu_icon" (click)="onDeletePartner($event)"><i class="material-icons delete md-24">delete</i></span>
+    </div>
+
+    <input matInput name="title" placeholder="Image Titile..." 
+        [ngModel]="title" 
+        (ngModelChange)="onChangeImageTitle($event)" />
+
+    <div class="partner_brandImage">
+        <img class="pd10" alt="Image of Service"
+            [src]="img" 
+            (click)="onLoadImg($event)" /> 
+    </div>
+
+    <input 
+        style="display: none" 
+        type="file" 
+        accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*"
+        (change)="onChageImage($event)"/>
+</div></div>

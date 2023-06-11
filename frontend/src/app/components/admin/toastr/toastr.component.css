@@ -1,0 +1,4 @@
+::ng-deep .custom-style{
+    background-color:brown;
+    color:white;
+  }

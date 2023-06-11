@@ -1,0 +1,43 @@
+<div class="row section-control-panel" style="margin-top: 5px; padding-right: 0px">
+    <div class="col-lg12" class="action-panel">
+        <button class="section_save_btn btn-primary mt15" id={{dt_record.id}} mat-flat-button color="primary" (click)="_onClickSave($event)">Save</button>
+    </div>
+</div>
+<div class="row intro_content">
+    <div [ngClass]="solutionTextViewLayout(panel_layout_way)" >
+        <app-single-description-editor  
+            [id]="dt_record.id" 
+            [title]="dt_record.title"
+            [subject]="dt_record.subject"
+            [mobile_subject]="dt_record.mobile_subject"
+
+            [summary]="dt_record.summary" 
+            [url]="dt_record.url" 
+            [site_title]="dt_record.site_title" 
+            [type]="dt_record.type" 
+            [show_subject]="true"
+            [show_mobile_subject]="true"
+
+            [has_title] = "true"
+            [has_gallery]="false"
+            [has_media] = "false" 
+
+            (updateTitleEvent)="updateTitle($event)"
+            (updateSubjectEvent)="updateSubject($event)"
+            (updateMobileSubjectEvent)="updateMobileSubject($event)"
+
+            (updateSummaryEvent)="updateSummary($event)"
+        ></app-single-description-editor>
+    </div>
+    <div [ngClass]="solutionImageViewLayout(panel_layout_way)" >
+        <div *ngFor="let dt_img of dt_record.images; index as i; let first = first; let last = last">
+            <app-single-image-upload [img]="dt_img.img" 
+                                    [title]="dt_img.title" [s_no]="0" [e_no]="i" 
+                                    (deleteImgEvent)="deleteImage($event)" (createImgEvent)="createImage($event)" 
+                                    (updateImgTitleEvent)="updateImageTitle($event)" (updateImgEvent)="updateImage($event)"
+                                    [must_hide_newBtn]="must_hide_img_newBtn" [has_newBtn]="last?true:false"></app-single-image-upload>
+        </div>
+    </div>
+</div> 
+
+<!-- <div>{{dt_record.images.length}}</div> -->

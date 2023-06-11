@@ -1,0 +1,77 @@
+<div class="row section-control-panel" style="margin-top: 5px">
+      <div class="col-lg12" class="action-panel">
+          <button class="section_save_btn btn-primary" id="logoSaveBtn" mat-flat-button color="primary" 
+                  (click)="_onClickSave($event)">Save</button>
+      </div>
+</div>
+
+<div class="row section-control-panel">
+      <div class="col-lg-4 col-md-4 col-sm-4" class="" style="width:33.33%;">
+            <app-single-image-upload class="logo_section" 
+                  [img]="logo_image1" 
+                  [title]="logo_title1" 
+                  [s_no]="0" 
+                  [e_no]="0" 
+                  backgroundColor="background-dark"
+                  [has_newBtn]="false"
+                  [show_image_title]="false"
+                  def_image_path="/assets/images/ics-logo.png"
+
+                  (deleteImgEvent)="deleteImage($event)" 
+                  (createImgEvent)="createImage($event)" 
+                  (updateImgTitleEvent)="updateImageTitle($event)" 
+                  (updateImgEvent)="updateImage1($event)"
+            ></app-single-image-upload>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4" class="" style="width:33.33%;">
+            <app-single-image-upload class="logo_section" 
+                  [img]="logo_image2" 
+                  [title]="logo_title2" 
+                  [s_no]="0" 
+                  [e_no]="0" 
+                  backgroundColor="background-dark"
+                  [has_newBtn]="false"
+                  [show_image_title]="false"
+                  def_image_path="/assets/images/ics-logo1.png"
+
+                  (deleteImgEvent)="deleteImage($event)" 
+                  (createImgEvent)="createImage($event)" 
+                  (updateImgTitleEvent)="updateImageTitle($event)" 
+                  (updateImgEvent)="updateImage2($event)"
+            ></app-single-image-upload>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4" class="" style="width:33.33%;">
+            <app-single-image-upload class="logo_section" 
+                  [img]="logo_image3" 
+                  [title]="logo_title3" 
+                  [s_no]="0" 
+                  [e_no]="0" 
+                  backgroundColor="background-dark"
+                  [has_newBtn]="false"
+                  [show_image_title]="false"
+                  def_image_path="/assets/images/ctl-engineering-logo.png"
+
+                  (deleteImgEvent)="deleteImage($event)" 
+                  (createImgEvent)="createImage($event)" 
+                  (updateImgTitleEvent)="updateImageTitle($event)" 
+                  (updateImgEvent)="updateImage3($event)"
+            ></app-single-image-upload>
+      </div>
+
+</div>
+
+<!-- <app-single-image-upload class="logo_section" 
+      [img]="logo_image" 
+      [title]="logo_title" 
+      [s_no]="0" 
+      [e_no]="0" 
+      backgroundColor="background-dark"
+      [has_newBtn]="false"
+      [show_image_title]="false"
+      def_image_path="/assets/images/ics-logo.png"
+
+      (deleteImgEvent)="deleteImage($event)" 
+      (createImgEvent)="createImage($event)" 
+      (updateImgTitleEvent)="updateImageTitle($event)" 
+      (updateImgEvent)="updateImage($event)"
+></app-single-image-upload> -->

@@ -1,0 +1,58 @@
+
+<div class="row section-control-panel" style="margin-top: 10px; margin-bottom: 0px;">
+    <div class="col-lg12" class="action-panel">
+        <button class="section_save_btn btn-primary" id={{dt_record.id}} mat-flat-button color="primary" (click)="_onClickSave($event)">Save</button>
+        <button class="section_delete_btn btn-danger" mat-button mat-stroked-button color="warn" (click)="_onClickDelete($event)">Delete</button>
+    </div>
+</div>
+
+<div class="row srvcontent_content">
+    <div [ngClass]="solutionTextViewLayout(panel_layout_way)" >
+        <app-single-blog-editor 
+            [title]="dt_record.title" 
+            [subject]="dt_record.subject"
+            [mobile_subject]="dt_record.mobile_subject"
+            [summary]="dt_record.summary" 
+            [s_no]="e_no"
+            [media]="dt_record.media"  
+            [gallery]="dt_record.gallery"
+            [has_gallery]="false"
+            [has_media]="false"
+            [postdt]="dt_record.postdt"
+            [author]="dt_record.author"
+            [relpost]="dt_record.relpost"
+            [cats_relposts]="cats_relposts"
+            [show_subject]="false"
+
+            (updateSubjectEvent)="updateSubject($event)" 
+            (updateMobileSubjectEvent)="updateMobileSubject($event)" 
+
+            (updateSummaryEvent)="updateSummary($event)" 
+            (updateTitleEvent)="updateTitle($event)"
+            (updateMediaEvent)="updateMedia($event)" 
+            (updateGalleryEvent)="updateGallery($event)"
+            (updateFileEvent)="updateFile($event)"
+            (updatePostDateEvent)="updatePostDate($event)"
+            (updateAuthorEvent)="updateAuthor($event)"
+            (updateRelPostEvent)="updateRelPost($event)" >
+
+        </app-single-blog-editor>
+    </div>
+    <div [ngClass]="solutionImageViewLayout(panel_layout_way)" >
+        <div *ngFor="let dt_img of dt_record.images; index as i; let first = first; let last = last">
+            <app-single-image-upload 
+                [img]="dt_img.img" 
+                [title]="dt_img.title" 
+                [s_no]="e_no" 
+                [e_no]="i" 
+                [show_image_title]="false"
+                [must_hide_newBtn]="true" 
+                [has_newBtn]="last || (first && dt_record.length == 1)?true:false"
+
+                (deleteImgEvent)="deleteImage($event)" 
+                (createImgEvent)="createImage($event)" 
+                (updateImgTitleEvent)="updateImageTitle($event)"
+                (updateImgEvent)="updateImage($event)" ></app-single-image-upload>
+        </div>
+    </div>
+</div>

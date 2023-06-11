@@ -1,0 +1,76 @@
+<div class="row single-image-upload" style="padding: 10px">
+    <mat-card class="image_card">
+        <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Reference Images_</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form" *ngIf="show_image_title">
+                <mat-form-field *ngIf="!is_image_title_multiline" class="example-full-width">
+                  <mat-label>Image Title...</mat-label>      
+                    <input
+                        matInput name="img_title" 
+                        placeholder="Image Titile..." 
+                        [ngModel]="title" 
+                        (ngModelChange)="onChangeImgTitle($event)"/>
+                </mat-form-field>
+
+                <mat-form-field *ngIf="is_image_title_multiline" class="example-full-width">
+                    <mat-label>Image Title...</mat-label>      
+                    <textarea 
+                        matInput name="img_title" 
+                        placeholder="Image Titile..." 
+                        [ngModel]="title" 
+                        (ngModelChange)="onChangeImgTitle($event)">
+                    </textarea>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <div class="image-section {{backgroundColor}}">
+            <img id="output" 
+                 class="pd10" 
+                 mat-card-image 
+                 (click)="_onLoadImg_AscAvnAdvs($event)"
+                 [src]="img || def_image_path" 
+                 alt="Image of Service">
+        </div>
+        <mat-card-actions>
+            <div class="action-secion">
+                <input 
+                    style="display: none" 
+                    name="chgImage" 
+                    id="ninja_loadImgBtn{{s_no}}_{{e_no}}" 
+                    type="file" 
+                    accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*"
+                    attr.data-order={{e_no}} 
+                    label="Choose Image" 
+                    (change)="uploadFileHandler($event)"/>
+
+                <button class="btn-primary" mat-button mat-stroked-button color="primary" id="loadImgBtn{{s_no}}_{{e_no}}" 
+                    (click)="_onLoadImg_AscAvnAdvs($event)">Load Image</button>
+
+                <button *ngIf="!must_hide_newBtn"
+                    class="ml10 btn-danger" 
+                    mat-button mat-stroked-button 
+                    color="primary" 
+                    attr.data-order={{e_no}} 
+                    (click)="_onDel_AscAvnAdvs($event)">Delete</button>
+
+                <button class="ml10 btn-primary" mat-button mat-stroked-button color="primary" attr.data-order={{e_no}} 
+                    (click)="_onAdd_AscAvnAdvs($event)" *ngIf="!must_hide_newBtn && has_newBtn" >Add</button>
+
+                <input 
+                    style="display: none" 
+                    name="newImage" 
+                    type="file" 
+                    accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*"
+                    attr.data-order={{e_no}} 
+                    label="Choose Image" 
+                    (change)="selectNewImage($event)"/>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+
