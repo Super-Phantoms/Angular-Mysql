@@ -1,0 +1,1310 @@
+
+<link rel='stylesheet' id='theplus-front-css-css' href='/assets/css/theplus-post-394.min.css?ver=1627558400' media='all' />
+<link rel='stylesheet' id='elementor-post-394-css' href='/assets/css/post-394.css?ver=1627558400' media='all' />
+
+
+  
+
+<ng-container *ngIf="currentPath.includes('about') else other">
+  <section *ngFor="let service of services; index as i" class="elementor-section elementor-top-section elementor-element elementor-element-a87d0ca elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default" data-id="a87d0ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-no">
+      <div class="elementor-row">
+        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-d089f24" data-id="d089f24" data-element_type="column">
+          <div class="elementor-column-wrap">
+            <div class="elementor-widget-wrap"></div>
+          </div>
+        </div>
+        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-cec7756" data-id="cec7756" data-element_type="column">
+          <div class="elementor-column-wrap elementor-element-populated">
+            <div class="elementor-widget-wrap">
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-617db6f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="617db6f" data-element_type="section" id="scroll">
+                <div class="elementor-container elementor-column-gap-no">
+                  <div class="elementor-row">
+                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8b3b7e4" data-id="8b3b7e4" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-62f66b1 elementor-widget elementor-widget-heading" data-id="62f66b1" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                              <h4 class="elementor-heading-title elementor-size-default">{{service.title}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1acb39e" data-id="1acb39e" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-0f06bce elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0f06bce" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-divider">
+                                <span class="elementor-divider-separator"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="elementor-element elementor-element-95b05bf elementor-widget elementor-widget-heading" data-id="95b05bf" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  <h2 class="elementor-heading-title elementor-size-default" [innerHTML]="service.subject">
+                  </h2>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-edc6bd3 elementor-widget elementor-widget-text-editor" data-id="edc6bd3" data-element_type="widget" data-widget_type="text-editor.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-48998ee" data-id="48998ee" data-element_type="column">
+          <div class="elementor-column-wrap">
+            <div class="elementor-widget-wrap"></div>
+          </div>
+        </div>
+        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-f0e3cbf" data-id="f0e3cbf" data-element_type="column">
+          <div class="elementor-column-wrap elementor-element-populated">
+            <div class="elementor-widget-wrap">
+              <div class="elementor-element elementor-element-23b4ceb elementor-widget elementor-widget-image" data-id="23b4ceb" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-image">
+                    <img width="1200" height="863" src="{{service.images[0].img}}" class="attachment-full size-full" alt="ICS | Learn About Our 7+ Decade Journey" loading="lazy" srcset="{{service.images[0].img}} 1200w, {{service.images[0].img}} 300w, {{service.images[0].img}} 1024w, {{service.images[0].img}} 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-xblocker="passed" style="visibility: visible;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-fdf8611" data-id="fdf8611" data-element_type="column">
+          <div class="elementor-column-wrap">
+            <div class="elementor-widget-wrap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--start mobile reactive-->
+  <section *ngFor="let service of services; index as i" class="elementor-section elementor-top-section elementor-element elementor-element-f323564 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f323564" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="elementor-row">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e3bf79" data-id="4e3bf79" data-element_type="column">
+          <div class="elementor-column-wrap elementor-element-populated">
+            <div class="elementor-widget-wrap">
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-fc811e8 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc811e8" data-element_type="section">
+                <div class="elementor-container elementor-column-gap-no">
+                  <div class="elementor-row">
+                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3455390" data-id="3455390" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-ca23f60 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ca23f60" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-divider">
+                                <span class="elementor-divider-separator"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-eb87f22" data-id="eb87f22" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-5fbdacf elementor-widget elementor-widget-heading" data-id="5fbdacf" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                              <h4 class="elementor-heading-title elementor-size-default">{{service.title}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ba92fc1" data-id="ba92fc1" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-7f6feb3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7f6feb3" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-divider">
+                                <span class="elementor-divider-separator"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="elementor-element elementor-element-529f8b2 elementor-widget elementor-widget-heading" data-id="529f8b2" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  <h2 class="elementor-heading-title elementor-size-default" [innerHTML]="service.mobile_subject">
+                  </h2>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-fa3f8da elementor-widget elementor-widget-image" data-id="fa3f8da" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-image">
+                    <img width="1024" height="736" src="{{service.images[0].img}}" class="attachment-large size-large" alt="" loading="lazy" srcset="{{service.images[0].img}} 1024w, {{service.images[0].img}} 300w, {{service.images[0].img}} 768w, {{service.images[0].img}} 1200w" sizes="(max-width: 1024px) 100vw, 1024px" data-xblocker="passed" style="visibility: visible;">
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-e117af2 elementor-widget elementor-widget-text-editor" data-id="e117af2" data-element_type="widget" data-widget_type="text-editor.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end mobile reative---->
+
+</ng-container>
+
+<ng-template #other>
+  <ng-container *ngFor="let service of services; index as i">            
+    <ng-template [ngIf]=" i % 2 == 0 " [ngIfElse]="nothing_odd">
+      <section class="about-background elementor-section elementor-top-section elementor-element elementor-element-da827e4 elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default elementor elementor-da827e4" data-elementor-id="da827e4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
+        <div class="elementor-container elementor-column-gap-no">
+          <div class="elementor-row">
+            <ng-container  *ngIf="service.images.length > 1 else nothing" >
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-7293d16" data-id="7293d16" data-element_type="column" style="width:14%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-bd23622" data-id="bd23622" data-element_type="column" style="width:33.5%">
+                  <div class="elementor-column-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                      <div class="elementor-element elementor-element-4652aa0 elementor-widget elementor-widget-menu-anchor" data-id="4652aa0" data-element_type="widget" data-widget_type="menu-anchor.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-menu-anchor"></div>
+                        </div>
+                      </div>
+                      <section class="elementor-section elementor-inner-section elementor-element elementor-element-357427f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="357427f" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                          <div class="elementor-row">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-02c0d11 heading-title" data-id="02c0d11" data-element_type="column" id="heading-title" >
+                              <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                  <div class="elementor-element elementor-element-22cc5a2 elementor-widget elementor-widget-heading" data-id="22cc5a2" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                      <h4 class="elementor-heading-title elementor-size-default">{{service.title}}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c07c3bc right-separator" data-id="c07c3bc" data-element_type="column" id="right-separator" >
+                              <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                  <div class="elementor-element elementor-element-aff9e09 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="aff9e09" data-element_type="widget" data-widget_type="divider.default">
+                                    <div class="elementor-widget-container">
+                                      <div class="elementor-divider">
+                                        <span class="elementor-divider-separator"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="elementor-element elementor-element-93c9745 elementor-widget elementor-widget-spacer" data-id="93c9745" data-element_type="widget" data-widget_type="spacer.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-spacer">
+                            <div class="elementor-spacer-inner" style="height:15px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="elementor-element elementor-element-246b6c9 elementor-widget elementor-widget-heading" data-id="246b6c9" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                          <h3 class="elementor-heading-title elementor-size-default" [innerHTML]="service.subject">
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="elementor-element elementor-element-8f595bf elementor-widget elementor-widget-spacer" data-id="8f595bf" data-element_type="widget" data-widget_type="spacer.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-spacer">
+                            <div class="elementor-spacer-inner" style="height:15px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="elementor-element elementor-element-1c75672 solutions-text elementor-widget elementor-widget-text-editor" data-id="1c75672" data-element_type="widget" data-widget_type="text-editor.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="elementor-element elementor-element-30a814b elementor-widget elementor-widget-spacer" data-id="30a814b" data-element_type="widget" data-widget_type="spacer.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-spacer">
+                            <div class="elementor-spacer-inner" style="height:15px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <section *ngIf="expressBtn != 'none'" class="elementor-section elementor-inner-section elementor-element elementor-element-f997591 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f997591" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                          
+                            <ng-container *ngIf="service.media else no_media1">
+                              <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce88206" data-id="ce88206" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated" (click)="watchVideo()">
+                                  <div class="elementor-element elementor-element-89e07e1 elementor-widget elementor-widget-button" data-id="89e07e1" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                      <div class="elementor-button-wrapper">
+                                        <a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL3VxQ0g4LUxiUmZ3P2ZlYXR1cmU9b2VtYmVkIn0%3D" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                          <span class="elementor-button-content-wrapper">
+                                            <span class="elementor-button-text">Watch the Video</span>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-35bf129" data-id="35bf129" data-element_type="column" (click)="onScrollFooter()">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                  <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-ca4db06 elementor-widget elementor-widget-button" data-id="ca4db06" data-element_type="widget" data-widget_type="button.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                          <a href="javascript:void(0)" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                            <span class="elementor-button-content-wrapper">
+                                              <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn6">
+                                                <span class="elementor-button-text" >Enquire Now</span>
+                                              </ng-template> 
+                                              <ng-template #nothing_solution_btn6>
+                                                <span class="elementor-button-text">Express Interest</span>
+                                              </ng-template>
+                                            </span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </ng-container>
+                            <ng-template #no_media1>
+                              <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-35bf129" data-id="35bf129" data-element_type="column" (click)="onScrollFooter()">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                  <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-ca4db06 elementor-widget elementor-widget-button" data-id="ca4db06" data-element_type="widget" data-widget_type="button.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                          <a href="javascript:void(0)" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                            <span class="elementor-button-content-wrapper">
+                                              <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn6">
+                                                <span class="elementor-button-text" >Enquire Now</span>
+                                              </ng-template> 
+                                              <ng-template #nothing_solution_btn6>
+                                                <span class="elementor-button-text">Express Interest</span>
+                                              </ng-template>
+                                            </span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </ng-template>
+                            
+                         
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-d55caa7" data-id="d55caa7" data-element_type="column" style="width:5%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-f157399" data-id="f157399" data-element_type="column" style="width:33.5%">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element  elementor-tabs-view-horizontal elementor-widget elementor-widget-tp-tabs-tours" data-id="9bcce08" [ngClass]="currentPath.includes('audio-solution') ? 'elementor-element-caf9412' : 'elementor-element-9bcce08'" data-element_type="widget" data-widget_type="tp-tabs-tours.default">
+                      <div class="elementor-widget-container">
+                        <div class="theplus-tabs-wrapper elementor-tabs   " id="tabs6318825acc9ae" data-tabs-id="tabs6318825acc9ae" data-connection="" data-tab-default="0" data-tab-hover="no" role="tablist">
+                          <div  class="theplus-tabs-content-wrapper elementor-tabs-content-wrapper">
+                          
+                              <div *ngFor="let image of service.images; index as i" class=" elementor-tab-title elementor-tab-mobile-title text-center" attr.tabindex="{{i+1}}" attr.data-tab="{{i+1}}" role="tab">
+                                <span>{{image.title}}</span>
+                              </div>
+                              <div *ngFor="let image of service.images; index as i" id="elementor-tab-content-3092" class="elementor-tab-content elementor-clearfix plus-tab-content" [ngClass]="{'active': i ==0 }"  attr.data-tab="{{i+1}}" role="tabpanel" aria-labelledby="elementor-tab-title-3092">
+                                <div class="plus-content-editor">
+                                  <p class="image-area">
+                                    <img class="image-slider alignnone wp-image-6299 size-full" src="{{image.img}}" alt="ICS | Large Format Interactive Video Display Installations" width="661" height="798" srcset="{{image.img}} 661w, {{image.img}} 248w" sizes="(max-width: 661px) 100vw, 661px" />
+                                  </p>
+                                </div>
+                              </div>
+                                                
+                          </div> 
+                          <div class="theplus-tabs-nav-wrapper elementor-tabs-wrapper text-center  ">
+                            <ul class="plus-tabs-nav full-width  nav-bar">                                 
+                                <li *ngFor="let image of service.images; index as i">
+                                  <div class="uppercase slider-title  elementor-tab-title elementor-tab-desktop-title plus-tab-header" attr.data-tab="{{i+1}}" tabindex="{{i+1}}" role="tab" [ngClass]="{'active': i ==0 }" aria-controls="elementor-tab-content">
+                                    <span>{{image.title}}</span>
+                                  </div>
+                                  <div class="tab-sep-icon ">
+                                    <i class="tab-between-icon fa fa-minus" ></i>
+                                  </div>
+                                </li>                           
+                            </ul>
+                          </div>                                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-ae7ea15" data-id="ae7ea15" data-element_type="column" style="width:14%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div>
+            </ng-container>
+
+            <ng-template #nothing >              
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-cfe6c9b" data-id="cfe6c9b" style="width:14%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-825a88e" data-id="825a88e" style="width:33.5%">
+                  
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-4652aa0 elementor-widget elementor-widget-menu-anchor" data-id="4652aa0" data-element_type="widget" data-widget_type="menu-anchor.default">
+                      <div class="elementor-widget-container">
+                        <div id="scroll" class="elementor-menu-anchor"></div>
+                      </div>
+                    </div>
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-357427f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="357427f" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-no">
+                        
+                        <div class="heading-title elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-02c0d11 " data-id="02c0d11" data-element_type="column" id="heading-title" >
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-22cc5a2 elementor-widget elementor-widget-heading" data-id="22cc5a2" data-element_type="widget" data-widget_type="heading.default">
+                              <div class="elementor-widget-container">
+                                <h4 class="elementor-heading-title elementor-size-default">{{service.title}} </h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c07c3bc right-separator" data-id="c07c3bc" data-element_type="column" id="right-separator" >
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-aff9e09 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="aff9e09" data-element_type="widget" data-widget_type="divider.default">
+                              <div class="elementor-widget-container">
+                                <div class="elementor-divider">
+                                  <span class="elementor-divider-separator"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="elementor-element elementor-element-9f345cf elementor-widget elementor-widget-spacer" data-id="9f345cf" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-246b6c9 elementor-widget elementor-widget-heading" data-id="246b6c9" data-element_type="widget" data-widget_type="heading.default" style="margin-bottom: 0px;">
+                      <div class="elementor-widget-container">
+                        <h3 class="elementor-heading-title elementor-size-default" [innerHTML]="service.subject">
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-87599a2 elementor-widget elementor-widget-spacer" data-id="87599a2" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px;">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-1c75672 market-text elementor-widget elementor-widget-text-editor" data-id="1c75672" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-6ffc9e5 elementor-widget elementor-widget-spacer" data-id="6ffc9e5" data-element_type="widget" data-widget_type="spacer.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngIf="expressBtn != 'none'" (click)="onScrollFooter()" class="elementor-element elementor-element-ac2f1f8 elementor-widget elementor-widget-button express-button" data-id="ac2f1f8" data-element_type="widget" alt="Read More About Industrial Communication &amp;Sound (ICS)" data-widget_type="button.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                          <div  title="Read More About Industrial Communication &amp;Sound (ICS)" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                            <span class="elementor-button-content-wrapper">
+                              <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution">
+                                <span class="elementor-button-text" >Enquire Now</span>
+                              </ng-template> 
+                              <ng-template #nothing_solution>
+                                <span class="elementor-button-text">Express Interest</span>
+                              </ng-template>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-02ccbd3" data-id="02ccbd3" style="width:5%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div> 
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-f0e3cbf" data-id="f0e3cbf" style="width:33.5%">
+                  <div class="elementor-column-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                      <div class="elementor-element elementor-element-23b4ceb elementor-widget elementor-widget-image" data-id="23b4ceb" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image">
+                            <img width="642" height="1024" src="{{service.images[0].img}}" class=" introduc-image attachment-full size-full"  sizes="(max-width: 1200px) 100vw, 1400px" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="elementor-column elementor-top-column elementor-element elementor-element-cfe6c9b" data-id="cfe6c9b" style="width:14%">
+                  <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap"></div>
+                  </div>
+                </div>
+              </ng-template>    
+          </div>
+        </div>
+      </section>
+    <!---start mobile reactive-->
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-479f4c9 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="479f4c9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+          <ng-container *ngIf=" service.images.length > 1 else nothing1">
+            <div class="elementor-row">
+              <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eba4917" data-id="eba4917" data-element_type="column">
+                <div class="elementor-column-wrap elementor-element-populated">
+                  <div class="elementor-widget-wrap">
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-28615d0 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28615d0" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-no">
+                        <div class="elementor-row">
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a6fa7b" data-id="1a6fa7b" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a1ce652 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a1ce652" data-element_type="widget" data-widget_type="divider.default">
+                                  <div class="elementor-widget-container">
+                                    <div class="elementor-divider">
+                                      <span class="elementor-divider-separator"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8d58c46" data-id="8d58c46" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-7abd7aa elementor-widget elementor-widget-heading" data-id="7abd7aa" data-element_type="widget" data-widget_type="heading.default">
+                                  <div class="elementor-widget-container">
+                                    <h4 class="elementor-heading-title elementor-size-default" [innerHTML]="service.title"></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3111778" data-id="3111778" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a44a07d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a44a07d" data-element_type="widget" data-widget_type="divider.default">
+                                  <div class="elementor-widget-container">
+                                    <div class="elementor-divider">
+                                      <span class="elementor-divider-separator"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <div  class="elementor-element elementor-element-94b9120 elementor-widget elementor-widget-heading" data-id="94b9120" data-element_type="widget" data-widget_type="heading.default">
+                      <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default" [innerHTML]="service.mobile_subject"> 
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="elementor-element  elementor-tabs-view-horizontal elementor-widget elementor-widget-tp-tabs-tours" data-id="6da428a" [ngClass]="currentPath.includes('audio-solution') ? 'elementor-element-6cc8273' : 'elementor-element-6da428a'" data-element_type="widget" data-widget_type="tp-tabs-tours.default">
+                      <div class="elementor-widget-container">
+                        <div class="theplus-tabs-wrapper elementor-tabs   " id="tabs6318825adf3c7" data-tabs-id="tabs6318825adf3c7" data-connection="" data-tab-default="0" data-tab-hover="no" role="tablist">
+                          <div class="theplus-tabs-content-wrapper elementor-tabs-content-wrapper">
+                            <ng-container *ngFor="let item of service.images; index as i">
+                              <div class="elementor-tab-title elementor-tab-mobile-title text-center" tabindex="{{i+1}}" attr.data-tab="{{i+1}}" role="tab">
+                                <span>{{item.title}}</span>
+                              </div>
+                              <div id="elementor-tab-content-1143" class="elementor-tab-content elementor-clearfix plus-tab-content" [ngClass]="{'active': i ==0 }" attr.data-tab="{{i+1}}" role="tabpanel" aria-labelledby="elementor-tab-title-1143">
+                                <div class="plus-content-editor">
+                                  <p>
+                                    <img loading="lazy" class="alignnone wp-image-3746 size-full" src="{{item.img}}" sizes="(max-width: 661px) 100vw, 661px" data-xblocker="passed" style="visibility: visible;">
+                                  </p>
+                                </div>
+                              </div>
+                            </ng-container>
+                          </div>
+                          <div class="theplus-tabs-nav-wrapper elementor-tabs-wrapper text-center  ">
+                            <ul class="plus-tabs-nav   full-width  ">
+                              <li *ngFor="let item of service.images; index as i">
+                                <div id="elementor-tab-title-{{i+1}}" class="elementor-tab-title elementor-tab-desktop-title plus-tab-header" [ngClass]="{'active': i ==0 }" attr.data-tab="{{i+1}}" tabindex="{{i+1}}" role="tab" attr.aria-controls="elementor-tab-content-{{i+1}}">
+                                  <span>{{item.title}}</span>
+                                </div>
+                                <div class="tab-sep-icon ">
+                                  <i class="tab-between-icon fa fa-minus"></i>
+                                </div>
+                              </li>
+                            
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-6444369 elementor-widget elementor-widget-text-editor" data-id="6444369" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d13af86 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="d13af86" data-element_type="widget" data-widget_type="button.default">
+                      <div class="elementor-widget-container">
+                          <ng-container *ngIf="service.media else no_media2">
+                              <div class="elementor-row">
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d7d9f3f" data-id="d7d9f3f" data-element_type="column" (click)="watchVideo()">
+                                  <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                      <div class="elementor-element elementor-element-1dcf037 elementor-widget elementor-widget-button" data-id="1dcf037" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                          <div class="elementor-button-wrapper">
+                                            <a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL3VxQ0g4LUxiUmZ3P2ZlYXR1cmU9b2VtYmVkIn0%3D" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+                                              <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-text">Watch the Video</span>
+                                              </span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d7d9f3f" data-id="d7d9f3f" data-element_type="column">
+                                  <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                      <div class="elementor-element elementor-element-1dcf037 elementor-widget elementor-widget-button" data-id="1dcf037" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                          <div class="elementor-button-wrapper">
+                                            <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc0NiIsInRvZ2dsZSI6ZmFsc2V9" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+                                              <span class="elementor-button-content-wrapper">
+                                                <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_mobile_solution">
+                                                  <span class="elementor-button-text" >Enquire Now</span>
+                                                </ng-template> 
+                                                <ng-template #nothing_mobile_solution>
+                                                  <span class="elementor-button-text">Express Interest</span>
+                                                </ng-template>
+                                              </span>                                    
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </ng-container>
+                          <ng-template #no_media2>
+                            <div class="elementor-button-wrapper">
+                              <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc0NiIsInRvZ2dsZSI6ZmFsc2V9" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                  <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_mobile_solution">
+                                    <span class="elementor-button-text" >Enquire Now</span>
+                                  </ng-template> 
+                                  <ng-template #nothing_mobile_solution>
+                                    <span class="elementor-button-text">Express Interest</span>
+                                  </ng-template>
+                                </span>                                    
+                              </a>
+                            </div>
+                          </ng-template>
+                         
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </ng-container>
+          <ng-template #nothing1>
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eba4917" data-id="eba4917" data-element_type="column">
+              <div class="elementor-widget-wrap elementor-element-populated">
+                  <section class="elementor-section elementor-inner-section elementor-element elementor-element-28615d0 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28615d0" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-no">
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a6fa7b" data-id="1a6fa7b" data-element_type="column" id="mobile-left-separator">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                  <div class="elementor-element elementor-element-a1ce652 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a1ce652" data-element_type="widget" data-widget_type="divider.default">
+                                      <div class="elementor-widget-container">
+                                          <div class="elementor-divider">
+                                              <span class="elementor-divider-separator"></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8d58c46" data-id="8d58c46" data-element_type="column" id="mobile-heading-title">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                  <div class="elementor-element elementor-element-7abd7aa elementor-widget elementor-widget-heading" data-id="7abd7aa" data-element_type="widget" data-widget_type="heading.default">
+                                      <div class="elementor-widget-container">
+                                          <h4 class="elementor-heading-title elementor-size-default " >{{service.title}} </h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3111778" data-id="3111778" data-element_type="column" id="mobile-right-separator">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                  <div class="elementor-element elementor-element-a44a07d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a44a07d" data-element_type="widget" data-widget_type="divider.default">
+                                      <div class="elementor-widget-container">
+                                          <div class="elementor-divider">
+                                              <span class="elementor-divider-separator"></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+                  <div class="elementor-element elementor-element-94b9120 elementor-widget elementor-widget-heading" data-id="94b9120" data-element_type="widget" data-widget_type="heading.default">
+                      <div class="elementor-widget-container">
+                          <h2 class="elementor-heading-title elementor-size-default" [innerHTML]="service.mobile_subject">
+                          </h2>
+                      </div>
+                  </div>
+                  <div class="elementor-element elementor-element-a2a21bd elementor-widget elementor-widget-image" data-id="a2a21bd" data-element_type="widget" data-widget_type="image.default">
+                      <div class="elementor-widget-container">
+                          <div class="elementor-image">
+                              <img width="642" height="1024" alt="" decoding="async" data-srcset="{{service.images[0].img}} 642w, {{service.images[0].img}} 188w, {{service.images[0].img}} 661w" data-src="{{service.images[0].img}}" data-sizes="(max-width: 642px) 100vw, 642px" class="attachment-large size-large lazyload" src="{{service.images[0].img}}"/>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="elementor-element elementor-element-bf95b58 elementor-widget elementor-widget-text-editor" data-id="bf95b58" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="elementor-widget-container">
+                          <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div *ngIf="expressBtn != 'none'" class="elementor-element elementor-element-d13af86 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="d13af86" data-element_type="widget" data-widget_type="button.default">
+                      <div class="elementor-widget-container">
+                          <div class="elementor-button-wrapper">
+                              <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc0NiIsInRvZ2dsZSI6ZmFsc2V9" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn">
+                                  <span class="elementor-button-text" >Enquire Now</span>
+                                </ng-template> 
+                                <ng-template #nothing_solution_btn>
+                                  <span class="elementor-button-text">Express Interest</span>
+                                </ng-template>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </ng-template>
+          
+        </div>
+      </section>
+    <!---end mobile reactive-->
+
+    </ng-template>
+    <ng-template #nothing_odd>
+      <section class="about-background1 elementor-section elementor-top-section elementor-element elementor-element-da827e4 elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default elementor elementor-da827e4" data-elementor-id="da827e4" data-id="da827e4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-no">
+          <div class="elementor-row">
+            <ng-container *ngIf=" service.images.length > 1 else nothing2" >
+              <div class="elementor-column elementor-element elementor-element-02ccbd3" data-id="02ccbd3" data-element_type="column" style="width:14%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-element elementor-element-f157399" data-id="f157399" data-element_type="column" style="width:33.5%">
+                <div class="elementor-column-wrap elementor-element-populated">
+                  <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-94a62cf elementor-tabs-view-horizontal elementor-widget elementor-widget-tp-tabs-tours" data-id="94a62cf" data-element_type="widget" data-widget_type="tp-tabs-tours.default">
+                      <div class="elementor-widget-container">
+                        <div class="theplus-tabs-wrapper elementor-tabs   " id="tabs647ef211b326a" data-tabs-id="tabs647ef211b326a" data-connection="" data-tab-default="0" data-tab-hover="no" role="tablist">
+                          <div  class="theplus-tabs-content-wrapper elementor-tabs-content-wrapper">
+                          
+                              <div *ngFor="let image of service.images; index as i" class="white-font elementor-tab-title elementor-tab-mobile-title text-center" attr.tabindex="{{i}}" attr.data-tab="{{i}}"  role="tab">
+                                
+                                <span>{{image.title}}</span>
+                              </div>
+                              <div *ngFor="let image of service.images; index as i" id="elementor-tab-content-1633" class="elementor-tab-content elementor-clearfix plus-tab-content" [ngClass]="{'active': i ==0 }" attr.data-tab="{{i}}" role="tabpanel" aria-labelledby="elementor-tab-title-1633">
+                                <div class="plus-content-editor">
+                                  <p class="image-area white-font">
+                                    <img class="image-slider alignnone wp-image-6299 size-full" src="{{image.img}}" alt="ICS | Large Format Interactive Video Display Installations" width="661" height="798" srcset="{{image.img}} 661w, {{image.img}} 248w" sizes="(max-width: 661px) 100vw, 661px" />
+                                  </p>
+                                </div>
+                              </div>
+                                                
+                          </div> 
+                          <div class="theplus-tabs-nav-wrapper elementor-tabs-wrapper text-center  ">
+                            <ul class="plus-tabs-nav full-width  nav-bar">                                 
+                                <li *ngFor="let image of service.images; index as i">
+                                  <div class=" slider-title  elementor-tab-title elementor-tab-desktop-title plus-tab-header" attr.data-tab="{{i}}" tabindex="{{i}}" role="tab" [ngClass]="i ==0 ? 'active' : 'inactive' " aria-controls="elementor-tab-content">
+                                    <span >{{image.title}}</span>
+                                  </div>
+                                  <div class="tab-sep-icon white-font">
+                                    <i class="tab-between-icon fa fa-minus white-font" ></i>
+                                  </div>
+                                </li>                           
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-element elementor-element-cfe6c9b " data-id="cfe6c9b" data-element_type="column" style="width:5%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-element elementor-element-825a88e" data-id="825a88e" data-element_type="column" style="width:33.5%">
+                <div class="elementor-column-wrap elementor-element-populated">
+                  <div class="elementor-widget-wrap">                        
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-92d7a06 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="92d7a06" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-no">
+                        <div class="elementor-row">
+                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a94dfbb heading-title" data-id="a94dfbb" data-element_type="column" id="heading-title" >
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-39ead80 elementor-widget elementor-widget-heading" data-id="39ead80" data-element_type="widget" data-widget_type="heading.default">
+                                  <div class="elementor-widget-container">
+                                    <h4 class="elementor-heading-title elementor-size-default">{{service.title}}</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-94fe4a0 right-separator" data-id="94fe4a0" data-element_type="column" id="right-separator">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-d6db5af elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d6db5af" data-element_type="widget" data-widget_type="divider.default">
+                                  <div class="elementor-widget-container">
+                                    <div class="elementor-divider">
+                                      <span class="elementor-divider-separator"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="elementor-element elementor-element-ad9f53a elementor-widget elementor-widget-spacer" data-id="ad9f53a" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-df7fd33 elementor-widget elementor-widget-heading" data-id="df7fd33" data-element_type="widget" data-widget_type="heading.default" style="margin-bottom: 0px">
+                      <div class="elementor-widget-container">
+                        <h3 class="elementor-heading-title elementor-size-default" [innerHTML]="service.subject"></h3>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d3a6c37 elementor-widget elementor-widget-spacer" data-id="d3a6c37" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-e33681d elementor-widget elementor-widget-text-editor" data-id="e33681d" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-2a0e780 elementor-widget elementor-widget-spacer" data-id="2a0e780" data-element_type="widget" data-widget_type="spacer.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner" style="height:15px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngIf="expressBtn != 'none'" (click)="onScrollFooter()" class="elementor-element elementor-element-28360e2 elementor-widget elementor-widget-button" data-id="28360e2" data-element_type="widget" data-widget_type="button.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                          <a href="javascript:void(0)" class="elementor-button-link elementor-button elementor-size-sm" role="button" style="background-color:white">
+                            <span class="elementor-button-content-wrapper">
+                              <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn1">
+                                <span class="elementor-button-text" style="color:red">Enquire Now</span>
+                              </ng-template> 
+                              <ng-template #nothing_solution_btn1>
+                                <span class="elementor-button-text" style="color:red">Express Interest</span>
+                              </ng-template>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>                  
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-element elementor-element-02ccbd3" data-id="02ccbd3" data-element_type="column" style="width:14%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+            </ng-container>
+            <ng-template #nothing2>
+              <div class="elementor-column elementor-top-column elementor-element elementor-element-02ccbd3" data-id="02ccbd3" data-element_type="column" style="width: 14%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-top-column elementor-element elementor-element-f0e3cbf" data-id="f0e3cbf" data-element_type="column" style="width: 33.5%">
+                <div class="elementor-column-wrap elementor-element-populated">
+                  <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-23b4ceb elementor-widget elementor-widget-image" data-id="23b4ceb" data-element_type="widget" data-widget_type="image.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-image">
+                          <img width="642" height="1400" src="{{service.images[0].img}}" class=" introduc-image attachment-full size-full"  sizes="(max-width: 1200px) 100vw, 1400px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-top-column elementor-element elementor-element-cfe6c9b" data-id="cfe6c9b" data-element_type="column" style="width: 5%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-top-column elementor-element elementor-element-825a88e" data-id="825a88e" data-element_type="column" style="width: 33.5%">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-4652aa0 elementor-widget elementor-widget-menu-anchor" data-id="4652aa0" data-element_type="widget" data-widget_type="menu-anchor.default">
+                    <div class="elementor-widget-container">
+                      <div id="scroll" class="elementor-menu-anchor"></div>
+                    </div>
+                  </div>
+                  <section class="elementor-section elementor-inner-section elementor-element elementor-element-357427f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="357427f" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-no">
+                      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-02c0d11 heading-title" data-id="02c0d11" data-element_type="column" id="heading-title" >
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                          <div class="elementor-element elementor-element-22cc5a2 elementor-widget elementor-widget-heading" data-id="22cc5a2" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                              <h4 class="white-font elementor-heading-title elementor-size-default">{{service.title}} </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c07c3bc right-separator" data-id="c07c3bc" data-element_type="column" id="right-separator" >
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                          <div class="elementor-element elementor-element-aff9e09 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="aff9e09" data-element_type="widget" data-widget_type="divider.default" style="--divider-color: #ffffff;">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-divider white-font">
+                                <span class="elementor-divider-separator "></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="elementor-element elementor-element-9f345cf elementor-widget elementor-widget-spacer" data-id="9f345cf" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner" style="height:15px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-246b6c9 elementor-widget elementor-widget-heading" data-id="246b6c9" data-element_type="widget" data-widget_type="heading.default" style="margin-bottom: 0px">
+                    <div class="elementor-widget-container">
+                      <h3 class="elementor-heading-title elementor-size-default white-font" [innerHTML]="service.subject">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-87599a2 elementor-widget elementor-widget-spacer" data-id="87599a2" data-element_type="widget" data-widget_type="spacer.default" style="margin-bottom: 0px">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner" style="height:15px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-1c75672 market-text elementor-widget elementor-widget-text-editor" data-id="1c75672" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-text-editor elementor-clearfix white-font" [innerHTML]="service.summary">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-6ffc9e5 elementor-widget elementor-widget-spacer" data-id="6ffc9e5" data-element_type="widget" data-widget_type="spacer.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner" style="height:15px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div *ngIf="expressBtn != 'none'" (click)="onScrollFooter()" class="elementor-element elementor-element-28360e2 elementor-widget elementor-widget-button" data-id="28360e2" data-element_type="widget" data-widget_type="button.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                        <a href="javascript:void(0)" class="elementor-button-link elementor-button elementor-size-sm" role="button" style="background-color:white">
+                          <span class="elementor-button-content-wrapper">
+                            <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn2">
+                              <span class="elementor-button-text" style="color:red">Enquire Now</span>
+                            </ng-template> 
+                            <ng-template #nothing_solution_btn2>
+                              <span class="elementor-button-text" style="color:red">Express Interest</span>
+                            </ng-template>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="elementor-column elementor-top-column elementor-element elementor-element-cfe6c9b" data-id="cfe6c9b" data-element_type="column" style="width: 14%">
+                <div class="elementor-column-wrap">
+                  <div class="elementor-widget-wrap"></div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </section>
+    <!---start mobile reactive-->
+      <section class="about-background1 elementor-section elementor-top-section elementor-element elementor-element-479f4c9 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="479f4c9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+          <ng-container *ngIf=" service.images.length > 1 else nothing3">
+            <div class="elementor-row">
+              <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eba4917" data-id="eba4917" data-element_type="column">
+                <div class="elementor-column-wrap elementor-element-populated">
+                  <div class="elementor-widget-wrap">
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-28615d0 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28615d0" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-no">
+                        <div class="elementor-row">
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a6fa7b" data-id="1a6fa7b" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a1ce652 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a1ce652" data-element_type="widget" data-widget_type="divider.default" style="--divider-color: #ffffff;">
+                                  <div class="elementor-widget-container">
+                                    <div class="elementor-divider">
+                                      <span class="elementor-divider-separator"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8d58c46" data-id="8d58c46" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-7abd7aa elementor-widget elementor-widget-heading" data-id="7abd7aa" data-element_type="widget" data-widget_type="heading.default">
+                                  <div class="elementor-widget-container">
+                                    <h4 class="white-font elementor-heading-title elementor-size-default" [innerHTML]="service.title"></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3111778" data-id="3111778" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a44a07d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a44a07d" data-element_type="widget" data-widget_type="divider.default" style="--divider-color: #ffffff;">
+                                  <div class="elementor-widget-container">
+                                    <div class="elementor-divider">
+                                      <span class="elementor-divider-separator"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="elementor-element elementor-element-94b9120 elementor-widget elementor-widget-heading" data-id="94b9120" data-element_type="widget" data-widget_type="heading.default">
+                      <div class="elementor-widget-container">
+                        <h2 class="white-font elementor-heading-title elementor-size-default" [innerHTML]="service.mobile_subject">
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-6da428a elementor-tabs-view-horizontal elementor-widget elementor-widget-tp-tabs-tours" data-id="6da428a" data-element_type="widget" data-widget_type="tp-tabs-tours.default">
+                      <div class="elementor-widget-container">
+                        <div class="theplus-tabs-wrapper elementor-tabs   " id="tabs6318825adf3c7" data-tabs-id="tabs6318825adf3c7" data-connection="" data-tab-default="0" data-tab-hover="no" role="tablist">
+                          <div class="theplus-tabs-content-wrapper elementor-tabs-content-wrapper">
+                            <ng-container *ngFor="let item of service.images; index as i">
+                              <div class="elementor-tab-title elementor-tab-mobile-title text-center" tabindex="{{i+1}}" attr.data-tab="{{i+1}}" role="tab">
+                                <span>{{item.title}}</span>
+                              </div>
+                              <div id="elementor-tab-content-1143" class="elementor-tab-content elementor-clearfix plus-tab-content" [ngClass]="{'active': i ==0 }" attr.data-tab="{{i+1}}" role="tabpanel" aria-labelledby="elementor-tab-title-1143">
+                                <div class="plus-content-editor">
+                                  <p>
+                                    <img loading="lazy" class="alignnone wp-image-3746 size-full" src="{{item.img}}" sizes="(max-width: 661px) 100vw, 661px" data-xblocker="passed" style="visibility: visible;">
+                                  </p>
+                                </div>
+                              </div>
+                            </ng-container>
+                          </div>
+                          <div class="theplus-tabs-nav-wrapper elementor-tabs-wrapper text-center  ">
+                            <ul class="plus-tabs-nav   full-width  ">
+                              <li *ngFor="let item of service.images; index as i">
+                                <div id="elementor-tab-title-{{i+1}}" class="elementor-tab-title elementor-tab-desktop-title plus-tab-header" [ngClass]="{'active': i ==0 }" attr.data-tab="{{i+1}}" tabindex="{{i+1}}" role="tab" attr.aria-controls="elementor-tab-content-{{i+1}}">
+                                  <span class="white-font">{{item.title}}</span>
+                                </div>
+                                <div class="tab-sep-icon white-font">
+                                  <i class="tab-between-icon fa fa-minus"></i>
+                                </div>
+                              </li>
+                            
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-6444369 elementor-widget elementor-widget-text-editor" data-id="6444369" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="elementor-widget-container">
+                        <div class="white-font elementor-text-editor elementor-clearfix" [innerHTML]="service.summary">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d13af86 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="d13af86" data-element_type="widget" data-widget_type="button.default">
+                      <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                          <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc0NiIsInRvZ2dsZSI6ZmFsc2V9" class="elementor-button-link elementor-button elementor-size-xs" role="button" style="background-color: white;">
+                            <span class="elementor-button-content-wrapper">
+                              <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn4">
+                                <span class="elementor-button-text" style="color: red;">Enquire Now</span>
+                              </ng-template> 
+                              <ng-template #nothing_solution_btn4>
+                                <span class="elementor-button-text" style="color: red;">Express Interest</span>
+                              </ng-template>
+                            </span>                                    
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <ng-template #nothing3>
+              <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eba4917" data-id="eba4917" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-28615d0 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28615d0" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a6fa7b" data-id="1a6fa7b" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-a1ce652 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a1ce652" data-element_type="widget" data-widget_type="divider.default" style="--divider-color: #ffffff;">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-divider">
+                                                <span class="elementor-divider-separator white-font"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8d58c46" data-id="8d58c46" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7abd7aa elementor-widget elementor-widget-heading" data-id="7abd7aa" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h4 class="elementor-heading-title elementor-size-default white-font">{{service.title}} </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3111778" data-id="3111778" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-a44a07d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a44a07d" data-element_type="widget" data-widget_type="divider.default" style="--divider-color: #ffffff;">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-divider">
+                                                <span class="elementor-divider-separator white-font"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="elementor-element elementor-element-94b9120 elementor-widget elementor-widget-heading" data-id="94b9120" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default white-font" [innerHTML]="service.mobile_subject">
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-a2a21bd elementor-widget elementor-widget-image" data-id="a2a21bd" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                <img width="642" height="1024" alt="" decoding="async" data-srcset="{{service.images[0].img}} 642w, {{service.images[0].img}} 188w, {{service.images[0].img}} 661w" data-src="{{service.images[0].img}}" data-sizes="(max-width: 642px) 100vw, 642px" class="attachment-large size-large lazyload" src="{{service.images[0].img}}"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-bf95b58 elementor-widget elementor-widget-text-editor" data-id="bf95b58" data-element_type="widget" data-widget_type="text-editor.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-text-editor elementor-clearfix white-font" [innerHTML]="service.summary">
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="expressBtn != 'none'" class="elementor-element elementor-element-d13af86 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="d13af86" data-element_type="widget" data-widget_type="button.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-button-wrapper" > 
+                                <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc0NiIsInRvZ2dsZSI6ZmFsc2V9" class="elementor-button-link elementor-button elementor-size-sm" role="button" style="background-color: white;">
+                                  <ng-template [ngIf]=" currentPath.includes('solutions') " [ngIfElse]="nothing_solution_btn5">
+                                    <span class="elementor-button-text" style="color:red">Enquire Now</span>
+                                  </ng-template> 
+                                  <ng-template #nothing_solution_btn5>
+                                    <span class="elementor-button-text" style="color:red">Express Interest</span>
+                                  </ng-template>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </ng-template>
+            
+        </div>
+      </section>
+    <!---end mobile reactive-->
+    </ng-template>
+  </ng-container>
+</ng-template>
+
+       
+
+        <div data-elementor-type="popup" data-elementor-id="746" class="elementor elementor-746 elementor-location-popup" data-elementor-settings="{&quot;timing&quot;:[]}">
+          <div class="elementor-section-wrap">
+              <section class="elementor-section elementor-top-section elementor-element elementor-element-ec0ffcb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ec0ffcb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                  <div class="elementor-container elementor-column-gap-default">
+                      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f9fb584" data-id="f9fb584" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                              <div class="elementor-element elementor-element-9561084 elementor-widget elementor-widget-heading" data-id="9561084" data-element_type="widget" data-widget_type="heading.default">
+                                  <div class="elementor-widget-container">
+                                      <h4 class="elementor-heading-title elementor-size-default">
+                                          Please fill out <br>the form below, and  we will be in touch! 
+                                      </h4>
+                                  </div>
+                              </div>
+                              <div class="elementor-element elementor-element-3a2aa51 bdt-formidable-forms-button-custom elementor-widget elementor-widget-bdt-formidable-forms" data-id="3a2aa51" data-element_type="widget" data-widget_type="bdt-formidable-forms.default">
+                                  <div class="elementor-widget-container">
+                                      <div class="bdt-formidable-forms">
+                                          <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_1_container" data-token="d65544c2f2e8a0fe5d13373227f6ef4d" data-token="d65544c2f2e8a0fe5d13373227f6ef4d">
+                                              <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_js_validate  frm_pro_form  frm_ajax_submit " id="form_contact-form" data-token="d65544c2f2e8a0fe5d13373227f6ef4d" data-token="d65544c2f2e8a0fe5d13373227f6ef4d">
+                                                  <div class="frm_form_fields ">
+                                                      <fieldset>
+                                                          <legend class="frm_screen_reader">Contact Us</legend>
+                                                          <div class="frm_fields_container">
+                                                              <input type="hidden" name="frm_action" value="create"/>
+                                                              <input type="hidden" name="form_id" value="1"/>
+                                                              <input type="hidden" name="frm_hide_fields_1" id="frm_hide_fields_1" value=""/>
+                                                              <input type="hidden" name="form_key" value="contact-form"/>
+                                                              <input type="hidden" name="item_meta[0]" value=""/>
+                                                              <input type="hidden" id="frm_submit_entry_1" name="frm_submit_entry_1" value="0760d43419"/>
+                                                              <input type="hidden" name="_wp_http_referer" value="/solutions/security-solutions/"/>
+                                                              <div id="frm_field_1_container" class="frm_form_field form-field  frm_required_field frm_top_container">
+                                                                  <label for="field_qh4icy" id="field_qh4icy_label" class="frm_primary_label">
+                                                                      <span class="frm_required"></span>
+                                                                  </label>
+                                                                  <input type="text" id="field_qh4icy" name="item_meta[1]" value="" maxlength="25" placeholder="Name*" data-reqmsg="This field cannot be blank." aria-required="true" data-invmsg="Name is invalid" aria-invalid="false"/>
+                                                              </div>
+                                                              <div id="frm_field_3_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
+                                                                  <label for="field_29yf4d" id="field_29yf4d_label" class="frm_primary_label">
+                                                                      <span class="frm_required"></span>
+                                                                  </label>
+                                                                  <input type="email" id="field_29yf4d" name="item_meta[3]" value="" maxlength="50" placeholder="Email*" data-reqmsg="This field cannot be blank." aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false"/>
+                                                              </div>
+                                                              <div id="frm_field_6_container" class="frm_form_field form-field  frm_required_field frm_top_container">
+                                                                  <label for="field_ylqqd" id="field_ylqqd_label" class="frm_primary_label">
+                                                                      <span class="frm_required"></span>
+                                                                  </label>
+                                                                  <input type="tel" id="field_ylqqd" name="item_meta[6]" value="" maxlength="15" placeholder="Mobile" data-reqmsg="This field cannot be blank." aria-required="true" data-invmsg="Phone is invalid" aria-invalid="false" pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" aria-describedby=" ">
+                                                              </div>
+                                                              <div id="frm_field_5_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
+                                                                  <label for="field_9jv0r1" id="field_9jv0r1_label" class="frm_primary_label">
+                                                                      <span class="frm_required"></span>
+                                                                  </label>
+                                                                  <textarea name="item_meta[5]" id="field_9jv0r1" rows="5" placeholder="Message" data-reqmsg="This field cannot be blank." aria-required="true" data-invmsg=" is invalid" aria-invalid="false"></textarea>
+                                                              </div>
+                                                              <!-- <div id="frm_field_18_container" class="frm_form_field form-field  frm_none_container">
+                                                                  <label for="g-recaptcha-response" id="field_hgrqz_label" class="frm_primary_label">
+                                                                      reCAPTCHA
+                                                                      <span class="frm_required" aria-hidden="true"></span>
+                                                                  </label>
+                                                                  <div id="field_hgrqz" class="frm-g-recaptcha" data-sitekey="6LfNNpImAAAAAKQ3P6bUSoXKsD7tVkb0DVHll_kf
+                                                                  " data-size="normal" data-theme="light"></div>
+                                                              </div> -->
+                                                              <input type="hidden" name="item_key" value=""/>
+                                                              <div class="frm_verify" aria-hidden="true">
+                                                                  <label for="frm_email_1">If you are human, leave this field blank.				</label>
+                                                                  <input type="text" class="frm_verify" id="frm_email_1" name="frm_verify" value=""/>
+                                                              </div>
+                                                              <div class="frm_submit">
+                                                                  <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate" onclick="buttonClick()">Submit</button>
+                                                              </div>
+                                                          </div>
+                                                      </fieldset>
+                                                  </div>
+                                                  <p style="display: none !important;">
+                                                      <label>
+                                                          &#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea>
+                                                      </label>
+                                                      <input type="hidden" id="ak_js_2" name="ak_js" value="52"/>
+                                                      <script type="rocketlazyloadscript">
+                                                          document.getElementById( "ak_js_2" ).setAttribute( "value", ( new Date() ).getTime() );
+                                                      </script>
+                                                  </p>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="elementor-element elementor-element-f7f4182 elementor-widget elementor-widget-text-editor" data-id="f7f4182" data-element_type="widget" data-widget_type="text-editor.default">
+                                  <div class="elementor-widget-container">
+                                      <div class="elementor-text-editor elementor-clearfix">
+                                          <p>Mandatory fields are marked with *</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+        </div>
+
+     
