@@ -1,0 +1,129 @@
+.elementor-1791 .elementor-element.elementor-element-c3890c3 > .elementor-container{min-height:84px;}.elementor-1791 .elementor-element.elementor-element-c3890c3:not(.elementor-motion-effects-element-type-background), .elementor-1791 .elementor-element.elementor-element-c3890c3 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-secondary );}.elementor-1791 .elementor-element.elementor-element-c3890c3{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-1791 .elementor-element.elementor-element-c3890c3 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}/* Start custom CSS for section, class: .elementor-element-c3890c3 */.footer-left {
+    float: left;
+    padding-left: 4rem;
+}
+.footer-right {
+float: right;
+    padding-right: 2rem;
+}
+.footer-left p, .footer-right p {
+  color: #fff;
+  font-size: 16px;
+}
+.footer-left p a, .footer-right p a {
+  color: #fff;
+}
+.footer-left p a:hover, .footer-right p a:hover {
+  color: #ee3125!important;
+}
+.footer-left p a:active, .footer-right p a:active {
+  color: #ee3125;
+}
+.walking-ant {
+display: inline-block;
+width: 30px;
+height: 20px;
+transform: rotateY(180deg);
+right: -30px;
+position: absolute;
+bottom: 0px;
+}
+.walking-ant svg path {
+fill: #ffffff;
+}
+.footer-hover-content:hover > .walking-ants-container .walking-ant:nth-child(1),  .footer-right p:hover + .footer-hover-content > .walking-ants-container .walking-ant:nth-child(1) {
+  animation: walkingAntOne 60s infinite forwards linear;
+}
+.footer-hover-content:hover > .walking-ants-container .walking-ant:nth-child(2),  .footer-right p:hover + .footer-hover-content > .walking-ants-container .walking-ant:nth-child(2) {
+  animation: walkingAntTwo 60s 20s infinite forwards linear;
+}
+.footer-hover-content:hover > .walking-ants-container .walking-ant:nth-child(3),  .footer-right p:hover + .footer-hover-content > .walking-ants-container .walking-ant:nth-child(3) {
+  animation: walkingAntThree 60s 21.5s infinite forwards linear;
+}
+.footer-hover-content:hover > .walking-ants-container .walking-ant:nth-child(4),  .footer-right p:hover + .footer-hover-content > .walking-ants-container .walking-ant:nth-child(4) {
+  animation: walkingAntFour 60s 40s infinite forwards linear;
+}
+.footer-hover-content:hover > .walking-ants-container .walking-ant:nth-child(5),  .footer-right p:hover + .footer-hover-content > .walking-ants-container .walking-ant:nth-child(5) {
+  animation: walkingAntFive 60s 48s infinite forwards linear;
+}
+.footer-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 2rem;
+  cursor: default;
+  text-align: center;
+  background: #ee3125;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform linear 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 111;
+}
+.footer-hover-content .fa-heart {
+  margin: 0 5px;
+}
+.footer-hover-content a {
+  color: #ffffff !important;
+}
+.footer-right p a {
+  position: relative;
+  background: transparent;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+.footer-right p:hover:hover {
+  background: transparent;
+}
+.footer-right p:hover + .footer-hover-content, .footer-hover-content:hover {
+  transform: translateX(0);
+  background: #ee3125;
+  color: #fff;
+}
+ @keyframes walkingAntOne {
+ 0% {
+ right: -30px;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes walkingAntTwo {
+ 0% {
+ right: -30px;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes walkingAntThree {
+ 0% {
+ right: -30px;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes walkingAntFour {
+ 0% {
+ right: -30px;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes walkingAntFive {
+ 0% {
+ right: -30px;
+}
+ 100% {
+ right: 100%;
+}
+}/* End custom CSS */
