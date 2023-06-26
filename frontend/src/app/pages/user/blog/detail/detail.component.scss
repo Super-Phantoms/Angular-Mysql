@@ -1,0 +1,40 @@
+
+.comments-area .comment-form-comment {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+.comments-area #wp-comment-cookies-consent {
+    margin-right: 10px;
+}
+body, button, input, select, textarea, .ast-button, .ast-custom-button {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: inherit;
+    font-size: 15px;
+    font-size: 1rem;
+}
+.comments-area .comment-notes, .comments-area .comment-textarea, .comments-area .form-allowed-tags {
+    margin-bottom: 1.5em;
+}
+.comments-area textarea#comment, .comments-area .ast-comment-formwrap input[type="text"] {
+    width: 100%;
+    border-radius: 0;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.elementor-grid-0 .elementor-grid {
+    display: inline-block;
+    width: 100%;
+    word-spacing: var(--grid-column-gap);
+    margin-bottom: calc(-1 * var(--grid-row-gap));
+}
+.elementor-grid-item{
+    margin-left:5px !important
+}
+.comments-area {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 2em;
+}

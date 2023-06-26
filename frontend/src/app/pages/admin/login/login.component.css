@@ -1,0 +1,68 @@
+
+.login-form-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(#89a6e1, #0c1368);
+}
+.login-main-panel {
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px 10px;
+}
+.tab-panel{
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.tab-panel .form-content {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.tab-panel .register-tablpanel {
+
+}
+.login-notify {
+	font-size: large;
+	margin-bottom: 20px;
+}
+.full-width {
+	width: 100%;
+}
+.action-panel {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.logging-img img{
+	width: 20px !important;
+	height:20px !important
+}
+.login-btn {
+	width: 100%;
+	padding: 5px;
+}
+.logging-btn{
+	background-color:#6d82f7 !important;
+	cursor:not-allowed;
+}
+.logging-img{
+	display: inline-block;
+	padding-top:2px
+}
+.logging-text{
+	margin-left: 30px; 
+	float: right; 
+	padding-top:4px; 
+	color:rgb(255, 255, 255)
+}

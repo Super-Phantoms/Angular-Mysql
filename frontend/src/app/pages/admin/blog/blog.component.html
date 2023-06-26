@@ -1,0 +1,92 @@
+
+<div class="main-content">
+  <div class="container-fluid" style="padding-top: 5px">
+    <mat-accordion>
+
+      <!-- First  -->
+      <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Article Introduction
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="intro-panel">
+          <app-intro-section 
+            [dt_record]="dt_article" 
+            [url]="intro_url"></app-intro-section>
+        </div>
+      </mat-expansion-panel>
+
+      <!-- Second  -->
+      <mat-expansion-panel [expanded]="false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Blog Introduction
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="intro-panel">
+          <app-intro-section 
+            [dt_record]="dt_intro" 
+            [url]="intro_url"></app-intro-section>
+        </div>
+      </mat-expansion-panel>
+
+      <!-- Third  -->
+      <mat-expansion-panel [expanded]="true" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Content
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- Control Bar -->
+        <div class="row section-control-panel section-control-bar" style="margin-top: 10px; margin-bottom: 10px;">
+          <div class="col-lg-6 pgnation-bar">
+          </div>
+          <div class="col-lg-6 func-btn-bar">
+            <button class="section_create_btn custom-color-2" mat-stroked-button color="primary" 
+              (click)="createSection($event)">Create</button>
+          </div>
+        </div>
+        <!-- Blog List -->
+        <div class="blog-panel">
+          <div *ngIf="dt_records.length == 0" class="no-article">There isn't any article...</div>
+          <mat-accordion>
+            <div *ngFor="let dt_record of dt_records; index as i; let first = first; let last = last">
+              <mat-expansion-panel [expanded]="first || (last && dt_records.length == 1)?true:false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    {{dt_record.title}}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="intro-panel">
+                  <app-blog-section [url]="content_url" 
+                                     [dt_record]="dt_record" 
+                                     [e_no]="i" 
+                                     [dt_records]="dt_records"
+                                     [has_newBtn]="false"
+                                     
+                                     (createSectionEvent)="createSection($event)" 
+                                     (deleteSectionEvent)="deleteSection($event)" 
+                                     (saveSectionEvent)="saveSection($event)" ></app-blog-section>
+
+                </div>
+              </mat-expansion-panel>
+            </div>
+          </mat-accordion>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+
+
+
+
+
+    
+
+    
+
+
+
+

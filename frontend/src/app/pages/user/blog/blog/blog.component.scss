@@ -1,0 +1,56 @@
+
+.blog-list-image{
+    height: 100% !important;
+    width: 100% !important;
+}
+.blog-summary{
+    height: 50px !important;
+}
+.blog-image{
+    height:300px !important
+}
+.pagination_total_show{
+    width:50%;
+    display: flex;
+    justify-content: left;
+    margin-top:15px;
+}
+.pagination_bar{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+.pagination_per_Page{
+    width:40%;
+    display: flex;
+    justify-content: right;
+}
+.perPage{
+    margin-top:15px
+}
+
+.form-select {
+    height:45px;
+    width: 60px;
+    margin-top:10px
+  }
+.custom-pagination{
+    display:inherit;
+}
+.custom-pagination div{
+    width: 25px;
+    margin-top: 10px
+}
+
+.item{
+    display: inline-block;
+}
+
+.page-link {
+    color: red; 
+}
+
+.page-link:hover {
+    color: red; 
+}
